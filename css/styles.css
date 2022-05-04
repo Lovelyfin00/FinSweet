@@ -54,6 +54,8 @@ body{
     display: flex;
 }
 
+/* hero section  */
+
 #hero-section .text-section{
     width: 45%;
 } 
@@ -65,9 +67,8 @@ body{
 #hero-section, #quote-section {
     padding: 80px 0;
 }
-
 #hero-section .image-section {
-    background-image: url(https://res.cloudinary.com/lovelyfin00/image/upload/v1650365219/work%20images/bg-image.png);
+    background-image: url(../img/header-image.png);
     background-size: cover;
     background-position: center;
     min-height: 68vh;
@@ -129,6 +130,7 @@ body{
 }
 
 #quote-section .left-section h2 {
+    width: 90%;
     margin-bottom: 30px;
     font-size: 58px;
 }
@@ -191,6 +193,7 @@ input:focus{
 .process-text p{
     color: #1E1B1B;
     opacity: 0.6;
+    width: 90%;
 }
 
 
@@ -345,6 +348,9 @@ input:focus{
     opacity: 0.7;
 }
 /* Styling brands section */
+.our-brands{
+    margin: auto;
+}
 .our-brands h2{
     font-size: 44px;
     text-align: center;
@@ -357,6 +363,9 @@ input:focus{
 .brand-div{
     width: 75%;
 }
+.brand-img{
+    width: 25%;
+}
 
 /*Cstomers Review Section */
 .review-width{
@@ -365,20 +374,18 @@ input:focus{
 }
 .review-width h2{
     font-size: 36px;
-    width: 55%;
+    width: 80%;
     margin: 0 auto 4% auto;
 }
 .review-box{
-    width: 35%;
-    height: 40%;
+    width: 48%;
+    height: 45%;
     padding: 25px;
     background-color: white;
-    margin-right: 3%;
 }
 .content-alignn{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 .img-box{
    margin-top: 1.8%; 
@@ -387,13 +394,31 @@ input:focus{
     margin-right: 15px;
     margin-bottom: 1.5%;
 }
-.arrow{
-    width: 84%;
-    display: flex;
+.flex-end{
     justify-content: flex-end;
+} 
+.arrow-container{
     margin-top: 30px;
 }
-  
+.back-arrow{
+    align-items: center;  
+}
+.backArrow-img{
+    width: 15px;
+}
+.forward-arrow{
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: black;
+}
+.arrow-img{
+    width: 25px;
+}
 .circle-arrow{
     height: 12%;
     width: 10%;
@@ -402,3 +427,564 @@ input:focus{
     color: white;
     background-color: green;
 }
+
+/* FAQ SECTION */
+
+.repair-time{
+    justify-content: space-between;
+    width: 60%;
+    height: 30%;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 1%;
+}
+.repair-content{
+    width: 80%;
+}
+.repair-content h4{
+    padding-bottom: 10px;
+}
+.repair-content p{
+    line-height: 1.5;
+    color: #939191;
+    font-size: 14px;
+}
+.sign-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: 1.5%;
+    background-color: #FF6433;
+    color: white;
+}
+.faq-question{
+    justify-content: space-between;
+    width: 60%;
+    height: 20%;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 1%;
+}
+
+/* FOOTER SECTIOn */
+.first-footer{
+    background: #1E1B1B;
+    opacity: 0.98;
+    color: white;
+}
+.footer-content{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.left-side{
+    width: 45%;
+}
+.left-side h2{
+    font-size: 44px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.social-links{
+    width: 40%;
+    justify-content: space-around;
+}
+.facebook, .twitter, .instagram, .linkedin{
+    width: 15%;
+}
+.facebook img, .twitter img, .instagram img, .linkedin img{
+    width: 70%;
+}
+.right-side{
+    width: 45%;
+}
+.helpline p, .address p, .open-time p{
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+/* SECOND FOOTER */
+.second-footer{
+    padding:5% 0;
+    background-color: black;
+}
+.second-container{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.footer-links li{
+    margin-left: 20px;
+    list-style: none;
+}
+.footer-links li a{
+    text-decoration:none;
+    color: white;
+}
+.footer-links li a:hover{
+    color: #FF6433;
+}
+.copyright p{
+    color: #939191;;
+}
+
+
+
+
+
+/* mobile view */
+@media (max-width: 450px) {
+
+    /* Navigation section */
+    .main-header{
+        align-items: flex-start;
+    }
+    .flex-direction {
+        flex-direction: column;
+    }
+
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+    }
+
+    .right-section .navigation ul {
+        flex-direction: column;
+
+    }
+
+    .right-section .navigation {
+        border: none;
+        width: 100%;
+    }
+
+    .right-section ul li {
+        padding: 10px 0;
+        margin-right: 0;
+    }
+
+    .right-section ul li a {
+        display: block;
+    }
+
+    .road-assistance {
+        padding: 10px 0;
+    }
+
+/* Hero section */
+    #hero-section .image-section{
+        width: 100%;
+        margin: auto;
+    }
+
+    #hero-section .text-section {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero-section .image-box{
+        order: 1;
+    }
+
+    .text-section .time-text{
+        width: 80%;
+        order: 2;
+    }
+
+    .text-section .time-section{
+        justify-content: center;
+    }
+
+    .text-section h1 {
+        font-size: 35px;
+    }
+    #quote-section .left-section .text-box {
+        width: 100%;
+    }
+    #quote-section .left-section h2{
+        width: 100%;
+        font-size: 55px;
+        text-align: center;
+    }#quote-section .left-section .image-box img {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .right-form-section{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    /* Process section */
+
+    .process-text {
+        width: 100%;
+        text-align: center;
+    }
+    .process-text h2 {
+        font-size: 45px;
+    }
+    .process-taken {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .vertical-line {
+        border-left: 4px dotted #FF6433;
+        height: 60px;
+        margin-left: 6.5%;
+        margin-top: -60px;
+    }
+
+    /* Offer section */
+
+    #our-offering h2 {
+        width: 100%;
+        font-size: 38px;
+    }
+    .flex-box {
+        height: 140px;
+        width: 140px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .offer-link{
+        justify-content: center;
+    }
+
+    /* Contactus section */
+    .contact-bg2{
+        display: none;
+    }
+    .contact-bg{
+        width: 100%;
+        height: 30vh;
+    }
+    .contact-flexbox {
+        height: 30vh;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .flexbox-text h4 {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .flex-properties{
+        width: 100%;
+        text-align: center;
+    }
+    .rating-amount{
+        font-size: 28px;
+    }
+    .finsweet-ratings p{
+        font-size: 14px;
+    }
+
+    /* our brands */
+    .brand-div{
+        width: 100%;
+    }
+    .our-brands h2{
+        font-size: 38px;
+    }
+    .brand-img{
+        width: 45%;
+        margin-right: 5%;
+    }
+    .brandImg{
+        width: 90%;
+    }
+    .brandImg-1{
+        margin: auto;
+    }
+
+    /* Customer review */
+
+    .width-mobile{
+        width: 80%;
+    }
+    .review-width h2{
+        font-size: 34px;
+        width: 100%;
+        text-align: center;
+    }
+    .review-box{
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+    .img-box{
+        margin-top: 2.8%;
+    }
+    .repair-content{
+        width: 90%;
+    }
+    .sign-box{
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Footer section */
+    .left-side{
+        width: 100%;
+        margin:auto;
+    }
+    .left-side h2{
+        font-size: 32px;
+    }
+    .social-links{
+        width: 60%;
+        margin: auto;
+    }
+    .right-side{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    .align-flex{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+    .footer-links li{
+        margin-bottom: 10px;
+    }
+    .copyright p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width: 769px) {
+
+    /* Navigation section */
+    .main-header{
+        align-items: flex-start;
+    }
+    .flex-direction {
+        flex-direction: column;
+    }
+
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+    }
+
+    .right-section .navigation ul {
+        flex-direction: column;
+
+    }
+
+    .right-section .navigation {
+        border: none;
+        width: 100%;
+    }
+
+    .right-section ul li {
+        padding: 10px 0;
+        margin-right: 0;
+    }
+
+    .right-section ul li a {
+        display: block;
+    }
+
+    .road-assistance {
+        padding: 10px 0;
+    }
+
+    /* Hero section */
+    #hero-section .image-section{
+        width: 100%;
+        margin: auto;
+    }
+
+    #hero-section .text-section {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero-section .image-box{
+        order: 1;
+    }
+    
+    .text-section .time-text{
+        width: 80%;
+        order: 2;
+    }
+
+    .text-section h1 {
+        font-size: 35px;
+    }
+    .text-section .time-section{
+        justify-content: center;
+    }
+    #quote-section .left-section .text-box {
+        width: 100%;
+    }
+    #quote-section .left-section h2{
+        width: 100%;
+        font-size: 55px;
+        text-align: center;
+    }#quote-section .left-section .image-box img {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .right-form-section{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+     /* Process section */
+
+     .process-text {
+        width: 100%;
+        text-align: center;
+    }
+    .process-text h2 {
+        font-size: 45px;
+    }
+    .process-taken {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .vertical-line {
+        border-left: 4px dotted #FF6433;
+        height: 60px;
+        margin-left: 6%;
+        margin-top: -40px;
+    }
+
+    /* Offer section */
+
+    #our-offering h2 {
+        width: 100%;
+        font-size: 38px;
+    }
+    .flex-box {
+        height: 180px;
+        width: 180px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .offer-link{
+        justify-content: center;
+    }
+
+    /* Contactus section */
+    .contact-bg2{
+        display: none;
+    }
+    .contact-bg{
+        width: 100%;
+        height: 30vh;
+    }
+    .contact-flexbox {
+        height: 30vh;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .flexbox-text h4 {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+    .flex-properties{
+        width: 100%;
+        text-align: center;
+    }
+    .rating-amount{
+        font-size: 28px;
+    }
+    .finsweet-ratings p{
+        font-size: 14px;
+    }
+
+        /* our brands */
+        .brand-div{
+            width: 100%;
+        }
+        .our-brands h2{
+            font-size: 38px;
+        }
+        .brand-img{
+            width: 45%;
+            margin-right: 5%;
+        }
+        .brandImg{
+            width: 90%;
+        }
+        .brandImg-1{
+            margin: auto;
+        }
+    
+        /* Customer review */
+    
+        .width-mobile{
+            width: 80%;
+        }
+        .review-width h2{
+            font-size: 34px;
+            width: 100%;
+            text-align: center;
+        }
+        .review-box{
+            margin: 0 auto 20px auto;
+            width: 100%;
+        }
+        .img-box{
+            margin-top: 2.8%;
+        }
+        .repair-content{
+            width: 90%;
+        }
+        .sign-box{
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Footer section */
+
+        .left-side{
+            width: 100%;
+            margin:auto;
+        }
+        .left-side h2{
+            font-size: 32px;
+        }
+        .social-links{
+            width: 60%;
+            margin: auto;
+        }
+        .right-side{
+            text-align: center;
+            padding-top: 20px;
+            width: 100%;
+            margin: auto;
+        }
+        .align-flex{
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-logo{
+            margin-bottom: 15px;
+        }
+        .footer-links li{
+            margin-bottom: 10px;
+        }
+        .copyright p{
+            font-size: 14px;
+        }
+    }
