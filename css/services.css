@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+    /* Navigation section */
+
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+    align-items: center;
+}
+.container {
+        width: 80%;
+        margin: 0 auto;
+}
+    
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    align-items: flex-start;
+}
+.flex-direction {
+    flex-direction: column;
+}
+
+.right-section {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+}
+
+.right-section .navigation ul {
+    flex-direction: column;
+    list-style: none;
+}
+
+.right-section .navigation {
+    border: none;
+    width: 100%;
+}
+
+.right-section ul li {
+    padding: 10px 0;
+    margin-right: 0;
+}
+
+.right-section ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.road-assistance {
+    padding: 10px 0;
+}
+
+    /* Services Section */
+#services-section{
+    margin-top: 50px;
+    padding-bottom: 10rem;
+}
+.services-img{
+    display: none;
+}
+.services-content{
+    background: linear-gradient(
+        115deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        ), url("../img/services-bg1.png") no-repeat center;
+    background-size: cover;
+    min-height: 40vh;
+}
+
+.service-text{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    min-height: 40vh;
+}
+.service-text h1{
+    padding-bottom: 0.8rem;
+     font-size: 25px;
+    color: white;
+}
+.service-text h2{
+    font-size: 23px;
+    color: white;
+    padding-bottom: 0.8rem;
+}
+.service-text p{
+    color: #F2F2F2;
+    font-size: 16px;
+    padding-bottom: 0.8rem;
+}
+.button-link{
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+.orange-btn{
+    color: white;
+    text-decoration: none;
+    background-color: #FF6433;
+    padding: 8px 14px;
+    border-radius: 12px;
+}
+.orange-btn:hover{
+    background-color: #00D289;
+}
+
+
+/* Ato Diagnotics Section */
+.diagnotics-container{
+    background-color: #F5F5F5;
+}
+.diagnotics-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.autocard-content{
+    width: 90%;
+    margin: auto;
+}
+.auto-card{
+    padding-bottom: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.auto-card .car-img{
+    margin: 1.5rem auto 1.5rem auto;
+}
+.auto-card .car-img img{
+    width: 100%;
+}
+.auto-card h2{
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.auto-card p{
+    font-size: 14px;
+    color: #232536;
+    opacity: 0.6;
+    padding-bottom: 10px;
+}
+
+.service-details a{
+    margin-right: 0.6rem;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.service-details a:hover{
+    border-bottom: 2px solid #FF6433;
+}
+.forward-arrow{
+    width: 10%;
+}
+.forward-arrow img{
+    width: 100%;
+}
+
+
+
+
+.flexbox-content{
+    justify-content: space-between;
+}
+.flex-box{
+    background-color: white;
+    width: 48%;
+    height: 120px;
+    margin-bottom: 1rem;
+}
+.flex-box:hover{
+    background-color: #FF6433;
+}
+.selected{
+    background-color: #FF6433;
+}
+.flexbox-item{
+    width: 90%;
+    text-align: center;
+}
+
+.icon-center{
+    text-align: center;
+}
+.flexbox-item p{
+    padding-top: 5px;
+}
+
+
+
+/* Process section */
+
+.process-container{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.process-content{
+    justify-content: center;
+    align-items: center;
+}
+.process-left{
+    width: 100%;
+    margin: 0 auto 2rem auto;
+}
+.process-left h2{
+    padding-top: 1rem;
+    font-size: 23px;
+    padding-bottom: 1.5rem;
+}
+.check-img{
+    max-width: 45%;
+}
+.check-img img{
+    width: 80%;
+}
+.check-content p{
+    padding-bottom: 1rem;
+}
+
+.process-right{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.right-img{
+    max-width: 48%;
+    height: 100%;
+}
+.right-img img{
+    width: 100%;
+    height: 100%;
+}
+.left-img{
+    max-width: 48%;
+    height: 100%;
+}
+.left-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Disgnose section */
+
+.diagnose-content{
+    margin-bottom: 5rem;
+}
+.diagnose-left{
+    display: none;
+}
+.diagnose-right{
+    background: linear-gradient(
+        115deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        ), url("../img/process-img4.png") no-repeat center;
+    background-size: cover;
+    min-height: 40vh;
+}
+
+
+
+/* footer section */
+
+.first-footer{
+    background: #1E1B1B;
+    opacity: 0.98;
+    color: white;
+}
+.footer-content{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.left-side{
+    width: 100%;
+    margin:auto;
+}
+.left-side h2{
+    padding-top: 1.5rem;
+    font-size: 32px;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+.facebook, .twitter, .instagram, .linkedin{
+    width: 15%;
+}
+.facebook img, .twitter img, .instagram img, .linkedin img{
+    width: 70%;
+}
+.right-side{
+    padding-bottom: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+}
+.align-flex{
+    justify-content: center;
+    align-items: center;
+}
+.helpline p, .address p, .open-time p{
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+/* Second footer */
+.second-footer{
+    padding:5% 0;
+    background-color: black;
+}
+.second-container{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.footer-logo{
+    margin-bottom: 15px;
+}
+.footer-links li{
+    margin-left: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-links li a{
+    text-decoration:none;
+    color: white;
+}
+.footer-links li a:hover{
+    color: #FF6433;
+}
+.copyright p{
+    color: #939191;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:450px){
+
+    /* Services section */
+
+    #services-section{
+        padding-bottom: 5rem;
+    }
+    .services-container{
+        width: 80%;
+        margin:auto;
+    }
+    .services-img{
+        display: unset;
+        width: 44%;
+        max-height: 100%;
+    }
+    .services-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .services-content{
+        background: none;
+        min-height: unset;
+        width: 56%;
+        min-height: 30%;
+        background-color: black;
+    }
+    .service-text{
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .service-text h2{
+        font-size: 23px;
+    }
+
+    /* Auto Diagnotics */
+
+    .diagnotics-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .diagnotics-content{
+        justify-content: space-between;
+    }
+    .auto-card{
+        width: 48%;
+        margin-bottom: 0;
+    }
+    .auto-card h2{
+        font-size: 30px;
+    }
+    .auto-card p{
+        font-size: 16px;
+    }
+    .diagnotics-flexbox{
+        width: 48%;
+    }
+    .flex-box{
+        height: 145px;
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* Process section */
+
+    .process-container {
+        padding-top: 3rem;
+    }
+    .process-content{
+        justify-content: space-between;
+    }
+    .process-left{
+        width: 48%;
+    }
+    .process-right{
+        width: 48%;
+    }
+
+
+    /* Diagnose section */
+    
+    .diagnose-content{
+        width:90%;
+        justify-content: space-between;
+        margin: auto;
+        padding: 3rem 0 3rem;
+    }
+    .diagnose-left{
+        display:unset;
+        display: flex;
+        width: 48%;
+        justify-content: space-between;
+    }
+    .diagnose-img1{
+        max-width: 48%;
+        height: 100%;
+    }
+    .diagnose-img1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .diagnose-img2{
+        max-width: 48%;
+        height: 100%;
+    }
+    .diagnose-img2 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .diagnose-right{
+        background: none;
+        min-height: unset;
+        background-size: unset;
+        width: 48%;
+    }
+    .service-text h2{
+        color: black;
+        font-size: 23px;
+    }
+    .diagnose-right .service-text p{
+        color: #232536;
+        opacity: 0.6;
+        font-size: 16px;
+    }
+
+    /* Footer */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:769px){
+    /* Navigation */
+
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 5px;
+    }
+    .flex-direction{
+        flex-direction: row;
+    }
+    
+    .right-section{
+        display: unset;
+        display: flex;
+        flex-direction: row;
+        
+        width: unset;
+    }
+    
+    .right-section .navigation ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .right-section ul li {
+        margin-right: 20px;
+    }
+    .right-section .navigation {
+        border-right: 2px solid #ccc;
+        width: unset;
+    }
+    .road-assistance {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .road-assistance .icon {
+        margin-right: 10px;
+    }
+
+
+    /* Auto Diagnotics section */
+
+    .service-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width:1050px){
+
+    /* Service section */
+    #services-section{
+        padding-top: 3rem;
+    }
+    .service-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .service-text h1{
+        font-size: 35px;
+    }
+    .service-text p{
+        font-size: 18px;
+    }
+    .button-link{
+        margin-bottom: unset;
+        margin-top: 1rem;
+    }
+    .orange-btn{
+        padding: 14px 24px;
+    }
+
+    /* process section */
+    .process-left h2{
+        font-size: 32px;
+    }
+    .check-content{
+        font-size: 18px;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Diagnose section */
+    .diagnose-content{
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+    }
+    .service-text h2 {
+        font-size: 32px;
+    }
+
+    .diagnose-right{
+        display: flex;
+        justify-content: center;
+    }
+    .diagnose-right .service-text p{
+        font-size: 18px;
+    }
+    
+
+    /* Footer section */
+    .footer-content{
+        padding: 4rem 0;
+    }
+}
