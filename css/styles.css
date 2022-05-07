@@ -540,7 +540,8 @@ input:focus{
     color: #FF6433;
 }
 .copyright p{
-    color: #939191;;
+    color: #939191;
+    font-size: 14px;
 }
 
 
